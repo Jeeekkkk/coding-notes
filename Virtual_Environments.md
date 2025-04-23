@@ -14,14 +14,14 @@
 
 ## Creating and Activating a Virtual Environment
 ### Create the environment
-# Windows and macOS/Linux
+Windows and macOS/Linux
 `python -m venv venv`
 
 ### Activate the environment
-# PowerShell – Windows
+PowerShell – Windows
 `.\venv\Scripts\Activate.ps1`
 
-# macOS / Linux / WSL
+macOS / Linux / WSL
 `source venv/bin/activate`
 
 ## After Activation

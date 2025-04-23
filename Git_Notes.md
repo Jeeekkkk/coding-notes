@@ -3,10 +3,10 @@
 ## 1. Create the Repository (GitHub)
 - Create a new repository in GitHub UI
 - Leave **"Initialize with README"** unchecked (you'll create it locally)
-- Do not add `.gitignore` or license — manage these from your local repo
+- Do not add `.gitignore` or license — manage these from the local repo
 
 ## 2. Prepare Local Project Folder
-Create your project directory locally and move into it:
+Create the project directory locally and move into it:
 
 `mkdir project-name`  
 `cd project-name`
@@ -44,7 +44,7 @@ Link to GitHub:
 
 `git remote add origin https://github.com/your-username/your-repo-name.git`
 
-Rename your branch to main (if needed):
+Rename the branch to main (if needed):
 
 `git branch -M main`
 

@@ -17,6 +17,10 @@
 Windows and macOS/Linux
 `python -m venv venv`
 
+## .gitignore Configuration
+Disable venev from git
+`echo "venv/" >> .gitignore`
+
 ### Activate the environment
 PowerShell – Windows
 `.\venv\Scripts\Activate.ps1`
@@ -27,8 +31,10 @@ macOS / Linux / WSL
 ## After Activation
 ### Install packages using pip
 `pip install requests`
+ Always run `pip freeze > requirements.txt` after installing a package that is not in testing
 
 ### Save current packages to a requirements.txt file
+Only when venv is activated, and always after intalling new packages
 `pip freeze > requirements.txt`
 
 ### Install from an existing requirements.txt
@@ -36,9 +42,6 @@ macOS / Linux / WSL
 
 ## Deactivating the Environment
 `deactivate`
-
-## .gitignore Configuration
-`venv/`
 
 ## Notes
 - Use one virtual environment per project

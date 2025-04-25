@@ -1,17 +1,28 @@
 # Accessing Keys
-dictionary["example key"]
+ex_dict["example key"]
     # If key is not found, exception KeyError is returned
-ditionary.get("example key")
+ex_dict.get("example key")
     # This is another way that will not produce an exception
     # Returns "N/A" if key not found
 # Accessing Nested Keys
-dictionary["example key"]["example nested key"]
+ex_dict["example key"]["example nested key"]
+
+    # Accessing Keys: Working with potential missing keys or values
+    ex_dict.get("key")
+        # If "key" exists → returns its value
+        # If "key" is missing → returns None
+        ex_dict.get("key", {}))
+            # Default value will return if key is missing, in this cas an empty dict
+    # Chaining for nested dictionaries
+    ex_dict.get("user", {}).get("age")
+        # If "user" exists, tries to get "age"
+        # If "user" is missing, .get("user", {}) returns an empty dict — so no crash 
 
 # Looping Through Keys and Values
 for key in ex_dict:
     print(key)
     # Prints the keys
-for key in ex_dict:
+for value in ex_dict.values():
     print(ex_dict[value])
     # prints the values
 for key,value in ex_dict.items():
@@ -38,6 +49,9 @@ del person["city"]
 
 # Add or overwrite multiple key-value pairs
 my_dict.update({"new_key": 42, "another_key": 99})
+
+# Merge two or more dictionaries
+dict_1.update(dict_2)
 
 # Remove a key and return its value
 my_dict.pop("key")

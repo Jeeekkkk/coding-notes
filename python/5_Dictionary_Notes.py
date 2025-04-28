@@ -36,6 +36,15 @@ values = person.values()
     # prints dict_values(['Alice', 30, 'New York'])
 keys_and_values = person.items()
     # prints dict_items([('name', 'Alice'), ...])
+
+# Dictionary Methods
+    # Get all keys
+keys = customer.keys()
+    # Get all values
+values = customer.values()
+    # Get all key-value pairs
+items = customer.items()
+
 # --------------------------------------------------------------------------------------------------------------------------------
 
 #                                       MODIFYING DICTIONARIES

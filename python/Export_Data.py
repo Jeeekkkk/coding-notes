@@ -1,6 +1,10 @@
-# # Starts with raw API response and normalizes data
+# JSON
+import json
+with open("json_scratch.json,"w") as f:
+    json.dump(data,f,indent=2)
 
-# Normalize data
+# # Starts with raw API response and normalizes data
+    # Normalize data
 def normalize_data(api_response):
     dataframe = pandas.json_normalize(data)
     # test
